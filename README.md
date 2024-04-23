@@ -9,7 +9,7 @@ Follow these steps to set up and run the Tweet Scraper API using yarn:
 1. **Clone the Repository**: Clone this repository to your local machine.
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/ezedinff/tweet-scraper-api
     ```
 
 2. **Install Dependencies**: Navigate to the project directory and install the dependencies using yarn.
