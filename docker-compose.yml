@@ -8,8 +8,6 @@ services:
       - '5432:5432'
     environment:
       POSTGRES_DB: scrapper_db
-      POSTGRES_USER: scrapper_user
-      POSTGRES_PASSWORD: scrapper_password
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
