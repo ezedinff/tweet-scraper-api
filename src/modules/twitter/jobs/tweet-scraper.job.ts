@@ -23,11 +23,12 @@ export class TweetScraperJob {
     return hash.digest('hex');
   }
 
-  @Cron(CronExpression.EVERY_30_MINUTES)
+  // @Cron(CronExpression.EVERY_30_MINUTES)
   async handleTweetScraping() {
     try {
       this.logger.log('Scraping tweets...');
-      const tweets = await this.scraperService.scrapeTwitterData('CoinDesk');
+      const { tweets } =
+        await this.scraperService.scrapeTwitterData('CoinDesk');
       const filteredTweets = tweets.filter(
         (tweet) => (!!tweet.text && !!tweet.image) || !!tweet.video.length,
       );

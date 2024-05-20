@@ -10,7 +10,7 @@ import { FROM_EMAIL, RESEND_EMAIL, TO_EMAIL } from './constants';
     ImageService,
     {
       provide: RESEND_EMAIL,
-      useValue: new Resend(process.env.RESEND_API_KEY),
+      useValue: new Resend('re_TbuUQYi8_KLCAwuQhkXB36UdkJ7gDVE96'),
     },
     {
       provide: FROM_EMAIL,
